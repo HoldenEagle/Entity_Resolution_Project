@@ -5,7 +5,7 @@ from dtsc330_26.classifiers import entity_resolution_classifier
 def train():
     # Add your training data here
     erc = entity_resolution_classifier.EntityResolutionClassifier()
-    erc.train(erc.features, erc.labels)
+    erc.train(features, labels)
     erc.save("data/erc.model")
 
 
